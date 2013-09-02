@@ -45,7 +45,8 @@
 	
 	<p>To use the bookmarklet, simply <strong>drag the &ldquo;YouTube Pop-Up&rdquo; link below to your browser bookmark toolbar</strong> (or save it anywhere in your bookmarks or favorites). Then go to a YouTube video page and click on the new bookmark. If all goes well a new window should appear with the video inside. Currently the bookmarklet only works on YouTube single video pages like <a href="http://www.youtube.com/watch?v=9GRsQEMTt1Y">this one</a>, not other YouTube pages like channel pages.</p>
 	
-	<p style="margin: 40px; text-align: center;"><a class="btn" href="javascript:void(window.open('http://www.youtube.com/watch_popup'+document.location.search,'_blank','height=345,width=560'))">YouTube Pop-Up</a></p>
+	<p style="margin: 40px; text-align: center;"><a class="btn" href="javascript:ytplayer=document.getElementById('movie_player');ytplayer.pauseVideo();void(window.open('http://www.youtube.com/watch_popup'+document.location.search+'&start='+Math.floor(ytplayer.getCurrentTime()),'_blank','height=360,width=640'))">YouTube Pop-Up</a></p>
+	<p style="margin: 40px; text-align: center;"><a class="btn" href="javascript:ytplayer=document.getElementById('movie_player');ytplayer.pauseVideo();void(window.open('http://www.youtube.com/watch_popup'+document.location.search+'&vq=hd720&start='+Math.floor(ytplayer.getCurrentTime()),'_blank','height=720,width=1280'))">YouTube 720p Pop-Up</a></p>
 	
 	<p>The bookmarklet was written by me, Michael Wheeler. If you find it helpful, let me know on <a href="https://twitter.com/wheelermichael">Twitter</a> or <a href="https://plus.google.com/113540717053225938334">Google+</a>. If you find a bug or have an improvement to suggest, please report it at the <a href="https://github.com/michaelwheeler/youtubepopout/issues">GitHub issue tracker</a>.</p>
 	
